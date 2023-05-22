@@ -259,4 +259,15 @@ src="https://www.facebook.com/tr?id=0000000000000000&amp;ev=PageView&amp;noscrip
 <script async src="https://player.pandavideo.com.br/api.v2.js"></script>
 <script src="js/pewogS6781655.js" charset="utf-8"></script>
 </body>
+<script>
+window.onload = function () {
+var links = document.getElementsByTagName("a");
+for (var i = 0, n = links.length; i < n; i++) {
+var href = links[i].href.trim() +
+(links[i].href.indexOf("?") > 0 ? '&' : '?') +
+document.location.search.replace('?', '').toString();
+links[i].href = href;
+}
+}
+</script>
 </html>
